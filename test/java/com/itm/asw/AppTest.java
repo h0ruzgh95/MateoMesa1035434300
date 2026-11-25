@@ -6,14 +6,12 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 class AppTest {
 
     @Test
-    void deberiaRetornarSaludoConNombre() {
-        String resultado = App.saludar("Mateo");
-        assertEquals("Hola, Mateo", resultado);
+    void deberiaSaludarConNombre() {
+        assertEquals("Hola, Mateo", App.saludar("Mateo"));
     }
 
     @Test
-    void deberiaRetornarSaludoPorDefectoSiEsVacio() {
-        String resultado = App.saludar("");
-        assertEquals("Hola, Aplicaciones y Servicios Web", resultado);
+    void deberiaSumarDosEnteros() {
+        assertEquals(15, App.sumar(10, 5));
     }
 }
